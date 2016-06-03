@@ -23,9 +23,9 @@ def process_or_store():
 
 def get_user_timeline():
     for status in tweepy.Cursor(api.home_timeline).items(10):
-    print(status.text)
+        print(status.text)
 
- get_user_timeline()
+# get_user_timeline()
 
 
 class MyListener(StreamListener):
@@ -86,7 +86,7 @@ with open('data.json', 'r') as f:
     for line in f:
         tweet = json.loads(line)
         tokens = preprocess(tweet['text'])
-        #do_something_else(tokens)
+        # do_something_else(tokens)
 
 tweet = "RT @marcobonzanini: just an example! :D http://example.com #NLP"
 print(preprocess(tweet))
