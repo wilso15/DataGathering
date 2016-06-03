@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
+import sys
 
 consumer_key = 'Gvgu6PPUg78ladng4BscKxUG6'
 consumer_secret = 'WQD7Hs1lXNHdU9beTGzoBdQmKWeYUXoh38Pri0tQuZIrZkEjpv'
